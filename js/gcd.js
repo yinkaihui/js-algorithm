@@ -16,7 +16,7 @@ const gxjs = function (a, b) {
     return a === b ? a : gxjs(a - b, b); 
 };
 
-// 求最小公倍数
+// 最小公倍数 = a * b / (a和b的最大公约数)
 const zxgb = function (a, b) {
     return a * b / gxjs(a, b);
 };
